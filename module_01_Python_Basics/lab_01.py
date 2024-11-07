@@ -52,3 +52,6 @@ print(bool(1)) # returns a True
 # Convert 0 to boolean
 print(bool(0))
 
+# Convert True to float
+float(True)
+
