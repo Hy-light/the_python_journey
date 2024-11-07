@@ -8,3 +8,8 @@ A syntactic error is when Python does not understand ones code, eg. if one spell
 A semantic error is when ones logic is wrong. You may not get an error message but the code could still be wrong.
 NameError: is when a function being executed has been wrongly spelt and python is finding it hard to know what it is. It could be a custom or built in function
 
+In python, a string is a sequence of numbers, strings can be treated with methods that work with list as well.
+We can replicate values of a string. Strings are immutable. We can cancatenate strings with other strings.
+We use the \ to add difficult aspect that would be hard to write literally e.g. to add a tab in a given 
+string, we can do this using \t 'My name is \t Prince Chime' or add a new line using \n 'This will be written in a \n new line'
+String a written withing single or double quotes "" or '' but can not be mixed. Back slash are added in our string using '\\'

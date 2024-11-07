@@ -26,3 +26,4 @@ def get_total_hr():
     return total_hr
 
 print(get_total_hr())
+
