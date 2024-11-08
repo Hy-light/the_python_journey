@@ -13,3 +13,5 @@ We can replicate values of a string. Strings are immutable. We can cancatenate s
 We use the \ to add difficult aspect that would be hard to write literally e.g. to add a tab in a given 
 string, we can do this using \t 'My name is \t Prince Chime' or add a new line using \n 'This will be written in a \n new line'
 String a written withing single or double quotes "" or '' but can not be mixed. Back slash are added in our string using '\\'
+
+The method find() finds a sub-string. The argument is the substring you would like to find, and the output is the first index of the sequence. We can find the sub-string jack or el.

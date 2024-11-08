@@ -10,3 +10,15 @@ print(strided_good)
 
 word = "uppercase"
 print(word.upper())
+
+a = "hello"
+# print(dir(a))
+
+b = [1, 2, 0]
+# print(dir(b))
+
+b = {
+    'key' : 'value',
+    'num' : 1
+}
+print(dir(b))
