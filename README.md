@@ -1,4 +1,4 @@
-# the_python_journey
+# The_Python_Journey
 My python 10 weeks journey started on 5th November, 2024
 
 ### 

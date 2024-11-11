@@ -55,7 +55,9 @@ print("Michael Jackson \t is the best" )
 print(" Michael Jackson \\ is the best" )
 
 # r will tell python that string will be display as raw string
-print(r"Michael Jackson \ is the best" )
+o = 'king'
+# Added the 'f' string to test if this was possible.
+print(fr"Michael Jackson \ is the best and {o} of Pop. This is the place we added an 'r' before the text block" )
 
 # Strings operation
 # Convert all the characters in string to upper case
@@ -77,7 +79,7 @@ print(f"Before lower: {c}")
 d = c.lower()
 print(f"After lower: {d}")
 
-# the replace method
+# The Replace method
 a = "Michael Jackson is good"
 b = a.replace('Michael', 'Janet')
 print(b)
@@ -87,3 +89,23 @@ a = "Hello! Michael Jackson has: 12 characters."
 print(a)
 b = a.replace('!','').replace(':','').replace('.','')
 print(b)
+
+# The Find method
+# Find the substring in the string. Only the index of the first elment of substring in string will be the output
+name = "Michael Jackson"
+f = name.find('el')
+print(f)
+
+# Find the substring in the string.
+g = name.find('Jack')
+print(g)
+
+# If cannot find the substring in the string: -1
+h = name.find('Jasdfasdasdf')
+print(h)
+
+# The method Split splits the string at the specified separator, and returns a list:
+name = 'Michael Jackson'
+split_string = name.split()
+print(split_string)
+

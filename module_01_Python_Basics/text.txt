@@ -1,6 +1,7 @@
 The modules cover the basics of python.
 
-Python is an interpreted language and an Object Oriented Program. Unlike compiled languages which compiles a code before it's execution, python interpretes every line of code during execution. 
+Python is an interpreted language and an Object Oriented Program. 
+Unlike compiled languages which compiles a code before it's execution, python interpretes every line of code during execution. 
 The most common object types: strings, integers and floats
 
 ------- Errors ------
@@ -14,4 +15,30 @@ We use the \ to add difficult aspect that would be hard to write literally e.g. 
 string, we can do this using \t 'My name is \t Prince Chime' or add a new line using \n 'This will be written in a \n new line'
 String a written withing single or double quotes "" or '' but can not be mixed. Back slash are added in our string using '\\'
 
-The method find() finds a sub-string. The argument is the substring you would like to find, and the output is the first index of the sequence. We can find the sub-string jack or el.
+The method find() finds a sub-string. The argument is the substring you would like to find, and the output is the first index of the sequence. 
+We can find the sub-string jack or el. If the sub-string is not in the string then the output is a negative one.
+
+
+The method replace() replaces a segment of the string, i.e. a substring with a new string. We input the part of the string we would like to change. 
+The second argument is what we would like to exchange the segment with, and the result is a new string with the segment changed:
+
+
+The method Split() splits the string at the specified separator, and returns a list:
+
+RegEx
+In Python, RegEx (short for Regular Expression) is a tool for matching and handling strings.
+This RegEx module provides several functions for working with regular expressions, including search, split, findall, and sub.
+Python provides a built-in module called re, which allows you to work with regular expressions. First, import the re module
+
+Regular expressions (RegEx) are patterns used to match and manipulate strings of text. 
+There are several special sequences in RegEx that can be used to match specific characters or patterns.
+
+Special Sequence 	Meaning 	Example
+\d 	Matches any digit character (0-9) 	"123" matches "\d\d\d"
+\D 	Matches any non-digit character 	"hello" matches "\D\D\D\D\D"
+\w 	Matches any word character (a-z, A-Z, 0-9, and _) 	"hello_world" matches "\w\w\w\w\w\w\w\w\w\w\w"
+\W 	Matches any non-word character 	"@#$%" matches "\W\W\W\W"
+\s 	Matches any whitespace character (space, tab, newline, etc.) 	"hello world" matches "\w\w\w\w\w\s\w\w\w\w\w"
+\S 	Matches any non-whitespace character 	"hello_world" matches "\S\S\S\S\S\S\S\S\S"
+\b 	Matches the boundary between a word character and a non-word character 	"cat" matches "\bcat\b" in "The cat sat on the mat"
+\B 	Matches any position that is not a word boundary 	"cat" matches "\Bcat\B" in "category" but not in "The cat sat on the mat"
