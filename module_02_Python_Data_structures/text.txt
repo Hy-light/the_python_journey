@@ -1,0 +1,5 @@
+Tuples
+Tuples are a type of data structure in python that are immutable. They are a sequence of various elements in a bracket (1, 2, 'it', 1.4 )
+
+Each element of a tuple can be accessed via an index. 
+Each element can be obtained by the name of the tuple followed by a square bracket with the index number:
