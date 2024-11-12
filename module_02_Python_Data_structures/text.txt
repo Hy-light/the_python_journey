@@ -3,3 +3,13 @@ Tuples are a type of data structure in python that are immutable. They are a seq
 
 Each element of a tuple can be accessed via an index. 
 Each element can be obtained by the name of the tuple followed by a square bracket with the index number:
+
+
+Lists
+Indexing
+We are going to take a look at lists in Python. 
+A list is a sequenced collection of different objects such as integers, strings, and even other lists as well. 
+The address of each element within a list is called an index. An index is used to access and refer to items within a list.
+
+We can convert a string to a list using split. For example, the method split translates every group of characters separated by a space into an element in a list:
+
