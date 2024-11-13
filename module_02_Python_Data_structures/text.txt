@@ -13,3 +13,20 @@ The address of each element within a list is called an index. An index is used t
 
 We can convert a string to a list using split. For example, the method split translates every group of characters separated by a space into an element in a list:
 
+
+Dictionaries¶
+What are Dictionaries?
+
+A dictionary consists of keys and values. It is helpful to compare a dictionary to a list. 
+Instead of being indexed numerically like a list, dictionaries have keys. 
+These keys are the keys that are used to access values within a dictionary.
+Each key is separated from its value by a colon ":". Commas separate the items, and the whole dictionary is enclosed in curly braces. 
+An empty dictionary without any items is written with just two curly braces, like this "{}".
+
+In summary, like a list, a dictionary holds a sequence of elements. Each element is represented by a key and its corresponding value. 
+Dictionaries are created with two curly braces containing keys and values separated by a colon. 
+For every key, there can only be one single value, however, multiple keys can hold the same value. 
+Keys can only be strings, numbers, or tuples, but values can be any data type.
+
+
+

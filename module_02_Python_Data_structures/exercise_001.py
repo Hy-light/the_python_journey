@@ -45,4 +45,57 @@ print(C)
 
 
 
+# ----------------- Set --------------------------------
+# Convert the list ['rap','house','electronic music', 'rap'] to a set:
+my_set = set(['rap','house','electronic music', 'rap'])
+print(my_set)
+
+# Consider the list A = [1, 2, 2, 1] and set B = set([1, 2, 2, 1]), does sum(A) == sum(B)?
+A = [1, 2, 2, 1]  
+B = set([1, 2, 2, 1])
+print("the sum of A is:", sum(A))
+print("the sum of B is:", sum(B))
+sum_A_B = sum(A) == sum(B)
+print(sum_A_B)
+
+# Create a new set album_set3 that is the union of album_set1 and album_set2:
+album_set1 = set(["Thriller", 'AC/DC', 'Back in Black'])
+album_set2 = set([ "AC/DC", "Back in Black", "The Dark Side of the Moon"])
+album_set3 = album_set1.union(album_set2)
+print(album_set3)
+
+
+# Find out if album_set1 is a subset of album_set3:
+print(album_set1.issubset(album_set3))
+
+
+# ----------------- Dictionaries -------------------
+# Question sample dictionary
+soundtrack_dic = {"The Bodyguard":"1992", "Saturday Night Fever":"1977"}
+print(soundtrack_dic)
+
+# In the dictionary soundtrack_dic what are the keys ?
+dic_keys = soundtrack_dic.keys()
+print(dic_keys)
+
+# In the dictionary soundtrack_dic what are the values ?
+
+dic_values = soundtrack_dic.values()
+print(dic_values)
+
+# Create a dictionary album_sales_dict where the keys are the album name and the sales in millions are the values. 
+# Write your code below and press Shift+Enter to execute
+album_sales_dict = { "Back in Black":50, "The Bodyguard":50, "Thriller":65}
+print(album_sales_dict)
+
+# Use the dictionary to find the total sales of Thriller:
+print(album_sales_dict["Thriller"])
+
+# Find the names of the albums from the dictionary using the method keys()
+print(album_sales_dict["Thriller"])
+
+# Find the values of the recording sales from the dictionary using the method values:
+print(album_sales_dict.values())
+
+
 
