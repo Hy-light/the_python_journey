@@ -35,3 +35,52 @@ Sometimes you want to check more than one condition at once. For example, you mi
 
 The and statement is only True when both conditions are true. The or statement is True if one condition, or both are True. 
 The not statement outputs the opposite truth value.
+
+
+---------------- Loops
+Range
+Sometimes, you might want to repeat a given operation many times. 
+Repeated executions like this are performed by loops. We will look at two types of loops, for loops and while loops.
+
+Before we discuss loops lets discuss the range object. 
+It is helpful to think of the range object as an ordered list. 
+For now, let's look at the simplest case. 
+If we would like to generate an object that contains elements ordered from 0 to 2 we simply use the following command:
+
+
+Loops are used to iterate through data structures and perform repetitive tasks. 
+For loops are used when we are certain of the number of times we would iterate over an item, while,
+while loops are used when the number of times are uncertain,.. the execute code here continues to run so long as the given conditions are true.
+
+What is while loop?¶
+
+As you can see, the for loop is used for a controlled flow of repetition. However, what if we don't know when we want to stop the loop? 
+What if we want to keep executing a code block until a certain condition is met? The while loop exists as a tool for repeated execution based on a condition. 
+The code block will keep being executed until the given logical condition returns a False boolean value.
+Here's how a while loop works:
+
+    First, you specify a condition that the loop will check before each iteration (repetition) of the code block.
+    If the condition is initially true, the code block is executed.
+    After executing the code block, the condition is checked again.
+    If the condition is still true, the code block is executed again.
+    Steps 3 and 4 repeat until the condition becomes false.
+    Once the condition becomes false, the loop stops, and the program continues with the next line of code a
+
+
+The main difference between a while loop and a for loop in Python is how they control the flow of execution and handle iterations.
+Key point of While Loop:
+
+    A while loop repeatedly executes a block of code as long as a given condition is true.
+    It does not have a fixed number of iterations but continues executing until the condition becomes false.
+    The condition is checked before each iteration, and if it's false initially, the code block is skipped entirely.
+    The condition is typically based on a variable or expression that can change during the execution of the loop.
+    It provides more flexibility in terms of controlling the loop's execution based on dynamic conditions.
+
+Key point of For Loop:
+
+    A for loop iterates over a sequence (such as a list, string, or range) or any object that supports iteration.
+    It has a predefined number of iterations based on the length of the sequence or the number of items to iterate over.
+    It automatically handles the iteration and does not require maintaining a separate variable for tracking the iteration count.
+    It simplifies the code by encapsulating the iteration logic within the loop itself.
+    It is commonly used when you know the exact number of iterations or need to iterate over each item in a collection.
+
