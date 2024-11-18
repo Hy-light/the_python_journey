@@ -84,3 +84,44 @@ Key point of For Loop:
     It simplifies the code by encapsulating the iteration logic within the loop itself.
     It is commonly used when you know the exact number of iterations or need to iterate over each item in a collection.
 
+---------------------------- 18th November -------------------------------
+
+Functions
+
+A function is a reusable block of code which performs operations specified in the function. They let you break down tasks and allow you to reuse your code in different programs.
+
+There are two types of functions :
+
+    Pre-defined functions
+    User defined functions
+
+What is a Function?
+
+You can define functions to provide the required functionality. Here are simple rules to define a function in Python:
+
+    Functions blocks begin def followed by the function name and parentheses ().
+    There are input parameters or arguments that should be placed within these parentheses.
+    You can also define parameters inside these parentheses.
+    There is a body within every function that starts with a colon (:) and is indented.
+    You can also place documentation before the body.
+    The statement return exits a function, optionally passing back a value.
+
+# Get a help on add function by:
+help(add)
+
+Variables
+
+The input to a function is called a formal parameter.
+A variable that is declared inside a function is called a local variable. 
+The parameter only exists within the function (i.e. the point where the function starts and stops).
+A variable that is declared outside a function definition is a global variable, and its value is accessible and modifiable throughout the program. 
+We will discuss more about global variables at the end of the lab.
+
+We can replace the lines of code with a function. 
+A function combines many instructions into a single line of code. 
+Once a function is defined, it can be used repeatedly. 
+You can invoke the same function many times in your program. 
+You can save your function and use it in another program or use someone else’s function. 
+
+# In-Built functions
+# In Python, an in-built function is a pre-defined function that is always available for use, providing common functionality without requiring any imports.

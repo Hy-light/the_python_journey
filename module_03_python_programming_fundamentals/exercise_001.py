@@ -134,3 +134,29 @@ while (i < len(Animals)):
 
     i += 1
 print(f"Animals made up of seven letter are: {Animal_7_letters}")
+
+
+# --------------------------- Functions -------------------------------
+# Quiz on Functions¶
+
+# Come up with a function that divides the first input by the second input:
+def divide_a_by_b(a, b):
+    return a / b
+
+print(divide_a_by_b(26, 4))
+
+
+"""
+Write a function code to find total count of word little in the given string: "Mary had a little lamb Little lamb, little lamb Mary had a little lamb.Its fleece was white as snow And everywhere that Mary went Mary went, Mary went Everywhere that Mary went The lamb was sure to go"**
+"""
+
+string = "Mary had a little lamb Little lamb, little lamb Mary had a little lamb.Its fleece was white as snow And everywhere that Mary went Mary went, Mary went Everywhere that Mary went The lamb was sure to go"
+string_1 = "I am enjoying python"
+def word_count(string, searched_word):
+    split_string = string.split()
+    if searched_word in split_string:
+        searched_word_count = split_string.count(searched_word)
+        return f'{searched_word} has a count of {searched_word_count}'
+
+print(word_count(string, 'Mary'))
+print(word_count(string_1, 'am'))
