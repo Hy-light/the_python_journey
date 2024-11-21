@@ -1,0 +1,11 @@
+Working with Data in Python
+
+Learning Objectives
+In this lesson you will learn about:
+
+            Reading files with open
+            Writing files with open
+            Loading data with Pandas
+            Working with and Saving data with Pandas
+
+We don’t have to read the entire file, for example, we can read the first 4 characters by entering three as a parameter to the method .read():

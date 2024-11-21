@@ -8,3 +8,5 @@ NameError: is when a function being executed has been wrongly spelt and python i
 
 Python is an interpreted language. Unlike compiled languages which compiles a code before it's execution, python interpretes every line of code during execution
 Python us an Object Oriented Program. The most common object types: strings, integers and floats
+
+All issues currently resolved. 
