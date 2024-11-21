@@ -1,0 +1,18 @@
+What is Numpy?¶
+
+NumPy is a Python library used for working with arrays, linear algebra, fourier transform, and matrices. NumPy stands for Numerical Python and it is an open source project. The array object in NumPy is called ndarray, it provides a lot of supporting functions that make working with ndarray very easy.
+
+Arrays are very frequently used in data science, where speed and resources are very important.
+
+NumPy is usually imported under the np alias.
+
+It's usually fixed in size and each element is of the same type. We can cast a list to a numpy array by first importing numpy:
+
+
+Slicing
+
+Like lists, we can slice the numpy array. Slicing in python means taking the elements from the given index to another given index.
+
+We pass slice like this: [start:end].The element at end index is not being included in the output.
+
+We can select the elements from 1 to 3 and assign it to a new numpy array d as follows:
