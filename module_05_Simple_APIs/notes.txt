@@ -16,3 +16,103 @@ Like lists, we can slice the numpy array. Slicing in python means taking the ele
 We pass slice like this: [start:end].The element at end index is not being included in the output.
 
 We can select the elements from 1 to 3 and assign it to a new numpy array d as follows:
+
+
+Overview of HTTP
+
+When you, the client, use a web page your browser sends an HTTP request to the server where the page is hosted. The server tries to find the desired resource by default "index.html". If your request is successful, the server will send the object to the client in an HTTP response. This includes information like the type of the resource, the length of the resource, and other information.
+
+The figure below represents the process. The circle on the left represents the client, the circle on the right represents the Web server. The table under the Web server represents a list of resources stored in the web server. In this case an HTML file, png image, and txt file .
+
+The HTTP protocol allows you to send and receive information through the web including webpages, images, and other web resources. In this lab, we will provide an overview of the Requests library for interacting with the HTTP protocol. 
+
+Uniform Resource Locator: URL
+
+Uniform resource locator (URL) is the most popular way to find resources on the web. We can break the URL into three parts.
+
+    scheme this is this protocol, for this lab it will always be http://
+    Internet address or Base URL this will be used to find the location here are some examples: www.ibm.com and  www.gitlab.com 
+    route location on the web server for example: /images/IDSNlogo.png
+
+You may also hear the term Uniform Resource Identifier (URI), URL are actually a subset of URIs. Another popular term is endpoint, this is the URL of an operation provided by a Web server.
+Request
+
+The process can be broken into the request and response process. The request using the get method is partially illustrated below. In the start line we have the GET method, this is an HTTP method. Also the location of the resource /index.html and the HTTP version. The Request header passes additional information with an HTTP request:
+
+When an HTTP request is made, an HTTP method is sent, this tells the server what action to perform.
+HTTP METHODS
+GET: Retrieves Data from the server
+POST: Submits data to server
+PUT: Updates data already on the server
+DELETE: Deletes data from server.
+
+Response
+The figure below represents the response; the response start line contains the version number HTTP/1.0, a status code (200) meaning success, followed by a descriptive phrase (OK). The response header contains useful information. Finally, we have the response body containing the requested file, an  HTML document. It should be noted that some requests have headers.
+
+1xx: Informational
+2xx: success
+200: OK
+3xx: Redirection
+300: Multiple choices
+4xx: Client Error
+401: Unauthorized
+403: Forbidden
+404: Not Found
+
+
+Hands-on Lab: API Examples
+Random User and Fruityvice API Examples
+
+Estimated time needed: 30 minutes
+Objectives
+
+After completing this lab you will be able to:
+
+    Load and use RandomUser API, using RandomUser() Python library
+    Load and use Fruityvice API, using requests Python library
+    Load and use Open-Joke-API, using requests Python library
+
+The purpose of this notebook is to provide more examples on how to use simple APIs. As you have already learned from previous videos and notebooks, API stands for Application Programming Interface and is a software intermediary that allows two applications to talk to each other.
+
+The advantages of using APIs:
+
+    Automation. Less human effort is required and workflows can be easily updated to become faster and more
+    productive.
+    Efficiency. It allows to use the capabilities of one of the already developed APIs than to try to independently implement some functionality from scratch.
+
+The disadvantage of using APIs:
+
+    Security. If the API is poorly integrated, it means it will be vulnerable to attacks, resulting in data breeches or losses having financial or reputation implications.
+
+One of the applications we will use in this notebook is Random User Generator. RandomUser is an open-source, free API providing developers with randomly generated users to be used as placeholders for testing purposes. This makes the tool similar to Lorem Ipsum, but is a placeholder for people instead of text. The API can return multiple results, as well as specify generated user details such as gender, email, image, username, address, title, first and last name, and more. More information on RandomUser can be found here.
+
+Another example of simple API we will use in this notebook is Fruityvice application. The Fruityvice API web service which provides data for all kinds of fruit! You can use Fruityvice to find out interesting information about fruit and educate yourself. The web service is completely free to use and contribute to
+
+Get method 
+
+    get_cell()
+    get_city()
+    get_dob()
+    get_email()
+    get_first_name()
+    get_full_name()
+    get_gender()
+    get_id()
+    get_id_number()
+    get_id_type()
+    get_info()
+    get_last_name()
+    get_login_md5()
+    get_login_salt()
+    get_login_sha1()
+    get_login_sha256()
+    get_nat()
+    get_password()
+    get_phone()
+    get_picture()
+    get_postcode()
+    get_registered()
+    get_state()
+    get_street()
+    get_username()
+    get_zipcode()
