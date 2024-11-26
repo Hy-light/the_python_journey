@@ -1,0 +1,40 @@
+Basics
+We create a django project by running the command:
+
+$ django-admin startproject <project-name> # this creates for us the base directories that we need for our project
+
+important files to keep in mind inside the project files include
+- settings.py 
+- urls.py 
+- manage.py 
+
+Run server command 
+$ python manage.py runserver # starts the development server within our project
+
+Django works with apps that have their unique set of functionalities, records of installed apps are found in the INSTALLED_APPS variable in the settings,py file
+
+$ python manage.py migrate will help migrate the INSTALLED_APPS and have their data base set up properly
+
+To access the admin centre, we would need to create a super user that can manage our models for us. We do so using this command:
+$ python manage.py createsuperuser
+
+To create an app...
+$django-admin startapp <app-name>
+
+Every app created must be registered in the settings.py file
+
+It is also adviced to create a urls.py file for every app that you creat
+
+In the views file is where we essentially set up all the functionalities for our backend
+
+Lecture supports app level template over project level templates
+Best practice is, app_dir > template, inside templates we create another sub directory with same as app, 
+E.g. lynx > templates > lynx ( then every template file )
+
+In your models is where we create the blue print of the things we plan to manage. These things are created using classes. E.g, a car class, a person class, etc.
+After defining your models, you will need to prepare migrations using the command:
+$ python manage.py makemigrations
+Afterwards we then migrate using the command
+$ python manage.py migrate # this pushes the models to our data base; we proceed to the admin.py file and register the models
+
+
