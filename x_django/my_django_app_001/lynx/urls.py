@@ -9,5 +9,6 @@ path('', views.home, name=""),
 
 # Create a dynamic url to fetch the post description
 path('article/<int:pk>/', views.singular_article, name="article")
+
     
 ]
